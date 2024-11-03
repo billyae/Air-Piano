@@ -22,8 +22,8 @@ white_keys = ["C3", "D3", "E3", "F3", "G3", "A3", "B3", "C4", "D4", "E4", "F4", 
 black_keys = ["Db3", "Eb3", "", "Gb3", "Ab3", "Bb3", "", "Db4", "Eb4", "", "Gb4", "Ab4", "Bb4"]
 
 # Set key dimensions for a smaller keyboard
-white_key_width, white_key_height = 60, 150
-black_key_width, black_key_height = 40, 100
+white_key_width, white_key_height = 90, 150
+black_key_width, black_key_height = 60, 100
 
 # Transparency levels for white and black keys
 white_key_alpha, black_key_alpha = 150, 200
@@ -72,7 +72,7 @@ key_press_states = {key: False for key in set(white_keys + black_keys) if key}
 # To track fingertip y-positions over time for velocity and acceleration calculation
 prev_positions = {}
 last_press_times = {}
-press_threshold = 100  # Threshold for detecting a "press" based on acceleration
+press_threshold = 20  # Threshold for detecting a "press" based on acceleration
 
 # Main loop
 running = True
